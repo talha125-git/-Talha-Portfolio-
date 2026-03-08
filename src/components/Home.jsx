@@ -26,10 +26,10 @@ const Home = () => {
                     </div>
                     <div className="mt-4 lg:mt-0">
                         <div>
-                        <h1 className="uppercase md:text-4xl text-2xl text-center lg:text-start font-bold">
+                        <h1 className="uppercase md:text-4xl text-3xl text-center lg:text-start font-bold">
                             Malik <span className="text-blue-400"> Abutalha </span> Raheem
                         </h1>
-                        <div className="w-32 h-1 mt-1 bg-blue-500  rounded-full"></div>
+                        <div className="lg:w-32 w-full h-1 mt-1 bg-blue-500  rounded-full"></div>
                         </div>
                         
                         <p className="text-lg italic mt-6 px-3 lg:px-0 text-center lg:text-start text-slate-300 max-w-lg">
@@ -51,11 +51,11 @@ const Home = () => {
                                 <i className="bi bi-instagram"></i>
                             </a>
                         </div>
-                        <div className="lg:mt-2 mt-5 justify-center flex lg:justify-end  cursor-pointer">
+                        <div className="lg:mt-2 mt-5 justify-center flex lg:justify-end">
                             <div>
                                 <a
                                     onClick={handleDownload}
-                                    className='text-sm font-semibold uppercase tracking-wide'
+                                    className='text-sm  cursor-pointer font-semibold uppercase tracking-wide'
                                 >
                                     Download <span className="text-blue-500">CV</span>
                                 </a>

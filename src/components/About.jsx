@@ -54,13 +54,31 @@ const About = () => {
                 <div className="grid md:grid-cols-2 gap-10 mb-16">
                     <div>
                         <h2 className="text-2xl font-semibold mb-4 text-slate-100">Personal Info</h2>
-                        <div className="space-y-3 text-slate-300">
-                            <p><span className="text-white font-medium">Name:</span> Malik Abutalha Raheem</p>
-                            <p><span className="text-white font-medium">Age:</span> 23 Years</p>
-                            <p><span className="text-white font-medium">Location:</span> Pakistan</p>
-                            <p><span className="text-white font-medium">Email:</span> abutalha@example.com</p>
-                            <p><span className="text-white font-medium">Languages:</span> English, Urdu</p>
-                        </div>
+
+                        <table className="text-slate-300">
+                            <tbody className="space-y-3">
+                                <tr>
+                                    <td className="text-white font-medium pr-4 py-1">Name:</td>
+                                    <td>Malik Abutalha Raheem</td>
+                                </tr>
+                                <tr>
+                                    <td className="text-white font-medium pr-4 py-1">Age:</td>
+                                    <td>23 Years</td>
+                                </tr>
+                                <tr>
+                                    <td className="text-white font-medium pr-4 py-1">Location:</td>
+                                    <td>Pakistan</td>
+                                </tr>
+                                <tr>
+                                    <td className="text-white font-medium pr-4 py-1">Email:</td>
+                                    <td>abutalhaa844@gmail.com</td>
+                                </tr>
+                                <tr>
+                                    <td className="text-white font-medium pr-4 py-1">Languages:</td>
+                                    <td>English, Urdu, Pushtu</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                     <div>
                         <h2 className="text-2xl font-semibold mb-4 text-slate-100">What I Do</h2>

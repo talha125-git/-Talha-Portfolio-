@@ -16,18 +16,28 @@ import portfolio_simple from "../images/portfolio_simple_.png"
 
 
 const Portfolio = () => {
-  const categories = ["All", "Web", "Mobile", "Design", "Intern", "Python AI/ML"];
+  const categories = ["All", "Intern", "Web", "Mobile", "Design", "Python AI/ML"];
   const [activeCategory, setActiveCategory] = useState("All");
 
   const projects = [
+
     {
-      title: "Crypto Website",
-      category: "Web",
-      description: "A modern cryptocurrency website providing real-time market updates, trading insights, and secure transaction services.",
-      tech: ["Figma", "HTML/CSS"],
-      image: Nefa_Web,
-      link: "https://talha125-git.github.io/tcss-nefa-web-complete/nefa2.html",
+      title: "Internship Project 1",
+      category: "Intern",
+      description: "A UK accountancy firm providing tax and accounting services for individuals and businesses.",
+      tech: ["React", "Tailwind", "Framer Motion"],
+      image: Internship_p1,
+      link: "https://talha125-git.github.io/intern_p1/",
     },
+    {
+      title: "Internship Project 2",
+      category: "Intern",
+      description: "A Swiss platform connecting businesses with flexible, temporary workers.",
+      tech: ["React", "Tailwind", "Framer Motion"],
+      image: Internship_p2,
+      link: "https://intern-p2.vercel.app/",
+    },
+    
     {
       title: "Portfolio Website",
       category: "Web",
@@ -35,6 +45,14 @@ const Portfolio = () => {
       tech: ["React", "Tailwind", "Framer Motion"],
       image: portfolio_web_react1,
       link: "https://talha125-git.github.io/React-Protfolio1/",
+    },
+    {
+      title: "Crypto Website",
+      category: "Web",
+      description: "A modern cryptocurrency website providing real-time market updates, trading insights, and secure transaction services.",
+      tech: ["Figma", "HTML/CSS"],
+      image: Nefa_Web,
+      link: "https://talha125-git.github.io/tcss-nefa-web-complete/nefa2.html",
     },
     {
       title: "Portfolio Simple",
@@ -86,22 +104,7 @@ const Portfolio = () => {
       link: "https://talha125-git.github.io/landing_page1/",
     },
 
-    {
-      title: "Internship Project 1",
-      category: "Intern",
-      description: "A UK accountancy firm providing tax and accounting services for individuals and businesses.",
-      tech: ["React", "Tailwind", "Framer Motion"],
-      image: Internship_p1,
-      link: "https://talha125-git.github.io/intern_p1/",
-    },
-    {
-      title: "Internship Project 2",
-      category: "Intern",
-      description: "A Swiss platform connecting businesses with flexible, temporary workers.",
-      tech: ["React", "Tailwind", "Framer Motion"],
-      image: Internship_p2,
-      link: "https://intern-p2.vercel.app/",
-    },
+    
     {
       title: "Emotion Detection from Text",
       category: "Python AI/ML",
