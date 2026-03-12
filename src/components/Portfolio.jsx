@@ -12,6 +12,7 @@ import Emotion_Pic from "../images/Emotion_Pic.png"
 import Hostel_Pic from "../images/Hostel_Pic.png"
 import food_web_pic from "../images/food_web_pic.png"
 import portfolio_simple from "../images/portfolio_simple_.png"
+import portfolio_Landing_page from "../images/portfolio_Landing_page.png"
 
 
 
@@ -102,6 +103,14 @@ const Portfolio = () => {
       tech: ["Figma", "HTML/CSS"],
       image: landing_page1,
       link: "https://talha125-git.github.io/landing_page1/",
+    },
+    {
+      title: "Potfolio Landing page",
+      category: "Design",
+      description: "Buid a landing page in just html css for paractice to build/Strong My frontend skills ",
+      tech: ["HTML/CSS"],
+      image: portfolio_Landing_page,
+      link: "https://talha125-git.github.io/Profile_Landing_page/myportfolio.html",
     },
 
     
