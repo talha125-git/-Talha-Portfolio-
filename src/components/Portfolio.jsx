@@ -13,11 +13,12 @@ import Hostel_Pic from "../images/Hostel_Pic.png"
 import food_web_pic from "../images/food_web_pic.png"
 import portfolio_simple from "../images/portfolio_simple_.png"
 import portfolio_Landing_page from "../images/portfolio_Landing_page.png"
+import crypto_track_pic from "../images/crypto_track_pic.png"
 
 
 
 const Portfolio = () => {
-  const categories = ["All", "Intern", "Web", "Mobile", "Design", "Python AI/ML"];
+  const categories = ["All", "Intern", "Web", "Mobile", "Design", "Python AI/ML","Full Stack"];
   const [activeCategory, setActiveCategory] = useState("All");
 
   const projects = [
@@ -38,7 +39,7 @@ const Portfolio = () => {
       image: Internship_p2,
       link: "https://intern-p2.vercel.app/",
     },
-    
+
     {
       title: "Portfolio Website",
       category: "Web",
@@ -113,7 +114,7 @@ const Portfolio = () => {
       link: "https://talha125-git.github.io/Profile_Landing_page/myportfolio.html",
     },
 
-    
+
     {
       title: "Emotion Detection from Text",
       category: "Python AI/ML",
@@ -129,6 +130,14 @@ const Portfolio = () => {
       tech: ["Streamlit", "Pandas", "Reportlab"],
       image: Hostel_Pic,
       link: "https://hostelmanagementsystem-z2hddpfpcjm4piwevy33mw.streamlit.app/",
+    },
+    {
+      title: "Crypto Currency Tracker",
+      category: "Full Stack",
+      description: "A real-time cryptocurrency tracking app with user authentication, favorites, and watchlist features built with React and FastAPI.",
+      tech: ["React", "FastAPI", "MongoDB", "Python"],
+      image: crypto_track_pic,
+      link: "https://crypto-price-tracker-658k.vercel.app/",
     },
   ];
 
