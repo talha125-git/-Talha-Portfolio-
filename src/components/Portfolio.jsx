@@ -14,11 +14,12 @@ import food_web_pic from "../images/food_web_pic.png"
 import portfolio_simple from "../images/portfolio_simple_.png"
 import portfolio_Landing_page from "../images/portfolio_Landing_page.png"
 import crypto_track_pic from "../images/crypto_track_pic.png"
+import todo_list_pic from "../images/todo_list_pic.png"
 
 
 
 const Portfolio = () => {
-  const categories = ["All", "Intern", "Web", "Mobile", "Design", "Python AI/ML","Full Stack"];
+  const categories = ["All", "Intern", "Web", "Mobile", "Design", "Python AI/ML","MERN Stack"];
   const [activeCategory, setActiveCategory] = useState("All");
 
   const projects = [
@@ -133,11 +134,19 @@ const Portfolio = () => {
     },
     {
       title: "Crypto Currency Tracker",
-      category: "Full Stack",
+      category: "MERN Stack",
       description: "A real-time cryptocurrency tracking app with user authentication, favorites, and watchlist features built with React and FastAPI.",
       tech: ["React", "FastAPI", "MongoDB", "Python"],
       image: crypto_track_pic,
       link: "https://crypto-price-tracker-658k.vercel.app/",
+    },
+    {
+      title: "Todo App",
+      category: "MERN Stack",
+      description: "A full-stack todo application with user authentication, personal task management, and CRUD operations built with React and Node.js.",
+      tech: [ "MongoDB", "Express","React" ,"Node"],
+      image: todo_list_pic,
+      link: "https://todo-app-puce-delta-57.vercel.app",
     },
   ];
 
