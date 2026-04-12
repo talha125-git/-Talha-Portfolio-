@@ -1,3 +1,3 @@
 git add .
-git commit -m "Add Toggle mode chnage btn"
+git commit -m "Changes in contact section"
 git push -u origin main   
