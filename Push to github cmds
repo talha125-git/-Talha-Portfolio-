@@ -1,3 +1,3 @@
 git add .
-git commit -m "Add new project in portfolio Todo_App"
+git commit -m "Add Toggle mode chnage btn"
 git push -u origin main   
