@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
+import ThemeToggle from "./ThemeToggle";
 
 const Sidebar = () => {
     const location = useLocation();
@@ -21,7 +22,10 @@ const Sidebar = () => {
                     Abutalha Raheem
                 </h1>
             </div>
-            <nav className="mt-20">
+            <div className="flex justify-center mt-8">
+                <ThemeToggle />
+            </div>
+            <nav className="mt-10">
                 <ul className="space-y-2 ml-11">
                     {navItems.map((item) => (
                         <li
