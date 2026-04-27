@@ -1,9 +1,10 @@
 import React from "react";
-import { Link, useLocation } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import ThemeToggle from "./ThemeToggle";
 
 const Sidebar = () => {
     const location = useLocation();
+    const navigate = useNavigate();
 
     const navItems = [
         { path: "/", label: "Home" },
@@ -13,8 +14,15 @@ const Sidebar = () => {
         { path: "/contact", label: "Contact" },
     ];
 
+    const handleNavClick = (path) => {
+        navigate(path, { replace: true });
+    };
+
     return (
         <div className="fixed top-0 left-0 h-screen w-[320px] lg:flex lg:flex-col justify-between  hidden lg:block bg-black text-white p-5 z-50">
+            <div className="absolute top-6 left-6">
+                <ThemeToggle />
+            </div>
             <div className="flex justify-center">
                 <h1
                     className="uppercase mt-20 text-4xl font-medium leading-[50px]"
@@ -22,20 +30,18 @@ const Sidebar = () => {
                     Abutalha Raheem
                 </h1>
             </div>
-            <div className="flex justify-center mt-8">
-                <ThemeToggle />
-            </div>
             <nav className="mt-10">
                 <ul className="space-y-2 ml-11">
                     {navItems.map((item) => (
                         <li
                             key={item.path}
                             className={`text-lg cursor-pointer transition-all duration-300 ${location.pathname === item.path
-                                    ? "text-white tracking-widest font-semibold"
-                                    : "text-slate-300 hover:text-white hover:tracking-widest"
+                                ? "text-white tracking-widest font-semibold"
+                                : "text-slate-300 hover:text-white hover:tracking-widest"
                                 }`}
+                            onClick={() => handleNavClick(item.path)}
                         >
-                            <Link to={item.path}>{item.label}</Link>
+                            <span>{item.label}</span>
                         </li>
                     ))}
                 </ul>

@@ -5,3 +5,16 @@
   padding: 0;
   text-align: left;
 }
+
+/* Prevent native body scrolling - FullPageScroll handles it */
+html, body {
+  overflow: hidden;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Ensure the main content area doesn't create extra scroll context */
+.flex-1.w-full {
+  position: relative;
+}

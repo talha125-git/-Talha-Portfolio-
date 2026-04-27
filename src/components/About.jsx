@@ -1,5 +1,4 @@
 import React from "react";
-import PageTransition from "./PageTransition";
 
 
 const About = () => {
@@ -40,104 +39,102 @@ const About = () => {
     ];
 
     return (
-        <PageTransition>
-            <section className="flex-1 py-12 px-6 md:px-12 lg:px-16">
-                {/* Page Title */}
-                <div className="mb-12">
-                    <h1 className="text-4xl md:text-5xl font-bold uppercase tracking-wide">
-                        About <span className="text-blue-500">Me</span>
-                    </h1>
-                    <div className="w-16 h-1 bg-blue-500 mt-3 rounded-full"></div>
-                </div>
+        <section className="flex-1 py-12 px-6 md:px-12 lg:px-16">
+            {/* Page Title */}
+            <div className="mb-12">
+                <h1 className="text-4xl md:text-5xl font-bold uppercase tracking-wide">
+                    About <span className="text-blue-500">Me</span>
+                </h1>
+                <div className="w-16 h-1 bg-blue-500 mt-3 rounded-full"></div>
+            </div>
 
-                {/* Bio Section */}
-                <div className="grid md:grid-cols-2 gap-10 mb-16">
-                    <div>
-                        <h2 className="text-2xl font-semibold mb-4 text-slate-100">Personal Info</h2>
-
-                        <table className="text-slate-300">
-                            <tbody className="space-y-3">
-                                <tr>
-                                    <td className="text-white font-medium pr-4 py-1">Name:</td>
-                                    <td>Malik Abutalha Raheem</td>
-                                </tr>
-                                <tr>
-                                    <td className="text-white font-medium pr-4 py-1">Age:</td>
-                                    <td>23 Years</td>
-                                </tr>
-                                <tr>
-                                    <td className="text-white font-medium pr-4 py-1">Location:</td>
-                                    <td>Pakistan</td>
-                                </tr>
-                                <tr>
-                                    <td className="text-white font-medium pr-4 py-1">Email:</td>
-                                    <td>abutalhaa844@gmail.com</td>
-                                </tr>
-                                <tr>
-                                    <td className="text-white font-medium pr-4 py-1">Languages:</td>
-                                    <td>English, Urdu, Pushtu</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div>
-                        <h2 className="text-2xl font-semibold mb-4 text-slate-100">What I Do</h2>
-                        <p className="text-slate-300 leading-relaxed">
-                            I am a creative web developer with a passion for building beautiful,
-                            functional websites. I specialize in front-end development using React.js
-                            and modern CSS frameworks. I love turning complex problems into simple,
-                            elegant solutions that provide real value to users.
-                        </p>
-                        <p className="text-slate-300 leading-relaxed mt-4">
-                            With a solid foundation in computer science and hands-on experience
-                            in web development, I bring both technical expertise and creative
-                            thinking to every project I work on.
-                        </p>
-                    </div>
-                </div>
-
-                {/* Skills Section */}
-                <div className="mb-16">
-                    <h2 className="text-2xl font-semibold mb-8 text-slate-100">
-                        My <span className="text-blue-500">Skills</span>
-                    </h2>
-                    <div className="grid sm:grid-cols-2 gap-x-10 gap-y-5">
-                        {skills.map((skill) => (
-                            <div key={skill.name}>
-                                <div className="flex justify-between mb-1">
-                                    <span className="text-slate-200 font-medium">{skill.name}</span>
-                                    <span className="text-blue-400 font-semibold">{skill.level}%</span>
-                                </div>
-                                <div className="w-full bg-slate-700 rounded-full h-2.5 overflow-hidden">
-                                    <div
-                                        className="bg-gradient-to-r from-blue-500 to-blue-400 h-full rounded-full transition-all duration-1000 ease-out"
-                                        style={{ width: `${skill.level}%` }}
-                                    ></div>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-
-                {/* Experience Section */}
+            {/* Bio Section */}
+            <div className="grid md:grid-cols-2 gap-10 mb-16">
                 <div>
-                    <h2 className="text-2xl font-semibold mb-8 text-slate-100">
-                        Experience & <span className="text-blue-500">Education</span>
-                    </h2>
-                    <div className="relative border-l-2 border-slate-700 ml-4">
-                        {experiences.map((exp, index) => (
-                            <div key={index} className="mb-10 ml-8 group">
-                                <div className="absolute -left-[11px] w-5 h-5 bg-blue-500 rounded-full border-4 border-gray-900 group-hover:scale-125 transition-transform duration-300"></div>
-                                <span className="text-sm text-blue-400 font-semibold">{exp.year}</span>
-                                <h3 className="text-xl font-semibold text-white mt-1">{exp.title}</h3>
-                                <p className="text-slate-400 text-sm italic">{exp.company}</p>
-                                <p className="text-slate-300 mt-2 leading-relaxed">{exp.description}</p>
-                            </div>
-                        ))}
-                    </div>
+                    <h2 className="text-2xl font-semibold mb-4 text-slate-100">Personal Info</h2>
+
+                    <table className="text-slate-300">
+                        <tbody className="space-y-3">
+                            <tr>
+                                <td className="text-white font-medium pr-4 py-1">Name:</td>
+                                <td>Malik Abutalha Raheem</td>
+                            </tr>
+                            <tr>
+                                <td className="text-white font-medium pr-4 py-1">Age:</td>
+                                <td>23 Years</td>
+                            </tr>
+                            <tr>
+                                <td className="text-white font-medium pr-4 py-1">Location:</td>
+                                <td>Pakistan</td>
+                            </tr>
+                            <tr>
+                                <td className="text-white font-medium pr-4 py-1">Email:</td>
+                                <td>abutalhaa844@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <td className="text-white font-medium pr-4 py-1">Languages:</td>
+                                <td>English, Urdu, Pushtu</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-            </section>
-        </PageTransition>
+                <div>
+                    <h2 className="text-2xl font-semibold mb-4 text-slate-100">What I Do</h2>
+                    <p className="text-slate-300 leading-relaxed">
+                        I am a creative web developer with a passion for building beautiful,
+                        functional websites. I specialize in front-end development using React.js
+                        and modern CSS frameworks. I love turning complex problems into simple,
+                        elegant solutions that provide real value to users.
+                    </p>
+                    <p className="text-slate-300 leading-relaxed mt-4">
+                        With a solid foundation in computer science and hands-on experience
+                        in web development, I bring both technical expertise and creative
+                        thinking to every project I work on.
+                    </p>
+                </div>
+            </div>
+
+            {/* Skills Section */}
+            <div className="mb-16">
+                <h2 className="text-2xl font-semibold mb-8 text-slate-100">
+                    My <span className="text-blue-500">Skills</span>
+                </h2>
+                <div className="grid sm:grid-cols-2 gap-x-10 gap-y-5">
+                    {skills.map((skill) => (
+                        <div key={skill.name}>
+                            <div className="flex justify-between mb-1">
+                                <span className="text-slate-200 font-medium">{skill.name}</span>
+                                <span className="text-blue-400 font-semibold">{skill.level}%</span>
+                            </div>
+                            <div className="w-full bg-slate-700 rounded-full h-2.5 overflow-hidden">
+                                <div
+                                    className="bg-gradient-to-r from-blue-500 to-blue-400 h-full rounded-full transition-all duration-1000 ease-out"
+                                    style={{ width: `${skill.level}%` }}
+                                ></div>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </div>
+
+            {/* Experience Section */}
+            <div className="pb-12">
+                <h2 className="text-2xl font-semibold mb-8 text-slate-100">
+                    Experience & <span className="text-blue-500">Education</span>
+                </h2>
+                <div className="relative border-l-2 border-slate-700 ml-4">
+                    {experiences.map((exp, index) => (
+                        <div key={index} className="mb-10 ml-8 group">
+                            <div className="absolute -left-[11px] w-5 h-5 bg-blue-500 rounded-full border-4 border-gray-900 group-hover:scale-125 transition-transform duration-300"></div>
+                            <span className="text-sm text-blue-400 font-semibold">{exp.year}</span>
+                            <h3 className="text-xl font-semibold text-white mt-1">{exp.title}</h3>
+                            <p className="text-slate-400 text-sm italic">{exp.company}</p>
+                            <p className="text-slate-300 mt-2 leading-relaxed">{exp.description}</p>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </section>
     );
 };
 
