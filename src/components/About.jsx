@@ -10,14 +10,14 @@ const About = () => {
         { name: "Node.js", icon: <FaNodeJs />, tag: "Runtime", color: "text-green-500" },
         { name: "Python AI/ML", icon: <FaPython />, tag: "Machine Learning", color: "text-blue-400" },
         { name: "MongoDB", icon: <SiMongodb />, tag: "Database", color: "text-emerald-500" },
-        // {
-        //     name: "C / C++ / Assembly",
-        //     icon: <SiCplusplus />,
-        //     tag: "Low-Level Programming",
-        //     color: "text-blue-600",
-        //     wide: true,
-        // },
-        // { name: "Database",           icon: <FaDatabase />,  tag: "SQL & Data Storage", color: "text-violet-400" },
+        {
+            name: "C / C++ / Assembly",
+            icon: <SiCplusplus />,
+            tag: "Low-Level Programming",
+            color: "text-blue-600",
+            wide: true,
+        },
+        { name: "Database",           icon: <FaDatabase />,  tag: "SQL & Data Storage", color: "text-violet-400" },
 
     ];
 
