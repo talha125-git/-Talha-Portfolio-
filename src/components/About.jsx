@@ -1,14 +1,24 @@
 import React from "react";
-
+import { FaHtml5, FaJs, FaReact, FaNodeJs, FaPython, FaDatabase } from "react-icons/fa";
+import { SiMongodb, SiCplusplus } from "react-icons/si";
 
 const About = () => {
     const skills = [
-        { name: "HTML/CSS", level: 95 },
-        { name: "JavaScript", level: 60 },
-        { name: "React.js", level: 65 },
-        { name: "Node.js", level: 40 },
-        { name: "Python AI/ML", level: 43 },
-        { name: "MongoDB", level: 35 },
+        { name: "HTML/CSS", icon: <FaHtml5 />, tag: "Markup & Styling", color: "text-orange-500" },
+        { name: "JavaScript", icon: <FaJs />, tag: "Scripting", color: "text-yellow-400" },
+        { name: "React.js", icon: <FaReact />, tag: "UI Framework", color: "text-cyan-400" },
+        { name: "Node.js", icon: <FaNodeJs />, tag: "Runtime", color: "text-green-500" },
+        { name: "Python AI/ML", icon: <FaPython />, tag: "Machine Learning", color: "text-blue-400" },
+        { name: "MongoDB", icon: <SiMongodb />, tag: "Database", color: "text-emerald-500" },
+        // {
+        //     name: "C / C++ / Assembly",
+        //     icon: <SiCplusplus />,
+        //     tag: "Low-Level Programming",
+        //     color: "text-blue-600",
+        //     wide: true,
+        // },
+        // { name: "Database",           icon: <FaDatabase />,  tag: "SQL & Data Storage", color: "text-violet-400" },
+
     ];
 
     const experiences = [
@@ -16,25 +26,29 @@ const About = () => {
             year: "2023 - Present",
             title: "Frontend Developer",
             company: "Freelance",
-            description: "Building responsive, user-centric web applications using React.js and modern CSS frameworks.",
+            description:
+                "Building responsive, user-centric web applications using React.js and modern CSS frameworks.",
         },
         {
             year: "2025 - 2026",
             title: "Web Development Intern",
             company: "Kreashion Software House",
-            description: "Assisted in developing and maintaining client websites. Gained hands-on experience with frontend development.",
+            description:
+                "Assisted in developing and maintaining client websites. Gained hands-on experience with frontend development.",
         },
         {
             year: "2026 - Present",
             title: "Backend Development (Learning Phase)",
             company: "Self-Learning / Projects",
-            description: "Currently learning backend development with Node.js and MongoDB. Building small projects to understand server-side programming, APIs, and database integration.",
+            description:
+                "Currently learning backend development with Node.js and MongoDB. Building small projects to understand server-side programming, APIs, and database integration.",
         },
         {
             year: "2023 - 2027",
             title: "BS Software Engineering",
             company: "CECOS University Peshawar",
-            description: "Currently pursuing a Bachelor's degree in Software Engineering, focusing on web development, data structures, artificial intelligence (AI), and machine learning (ML).",
+            description:
+                "Currently pursuing a Bachelor's degree in Software Engineering, focusing on web development, data structures, artificial intelligence (AI), and machine learning (ML).",
         },
     ];
 
@@ -52,7 +66,6 @@ const About = () => {
             <div className="grid md:grid-cols-2 gap-10 mb-16">
                 <div>
                     <h2 className="text-2xl font-semibold mb-4 text-slate-100">Personal Info</h2>
-
                     <table className="text-slate-300">
                         <tbody className="space-y-3">
                             <tr>
@@ -94,23 +107,27 @@ const About = () => {
                 </div>
             </div>
 
-            {/* Skills Section */}
+            {/* Skills Section — Card Grid with react-icons */}
             <div className="mb-16">
                 <h2 className="text-2xl font-semibold mb-8 text-slate-100">
                     My <span className="text-blue-500">Skills</span>
                 </h2>
-                <div className="grid sm:grid-cols-2 gap-x-10 gap-y-5">
+                <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
                     {skills.map((skill) => (
-                        <div key={skill.name}>
-                            <div className="flex justify-between mb-1">
-                                <span className="text-slate-200 font-medium">{skill.name}</span>
-                                <span className="text-blue-400 font-semibold">{skill.level}%</span>
-                            </div>
-                            <div className="w-full bg-slate-700 rounded-full h-2.5 overflow-hidden">
-                                <div
-                                    className="bg-gradient-to-r from-blue-500 to-blue-400 h-full rounded-full transition-all duration-1000 ease-out"
-                                    style={{ width: `${skill.level}%` }}
-                                ></div>
+                        <div
+                            key={skill.name}
+                            className="group flex flex-col items-center justify-center gap-3 p-5 rounded-2xl bg-slate-800/60 border border-slate-700 hover:border-blue-500 hover:bg-slate-800 transition-all duration-300 cursor-default"
+                        >
+                            <span className={`text-4xl ${skill.color} group-hover:scale-110 transition-transform duration-300`}>
+                                {skill.icon}
+                            </span>
+                            <div className="text-center">
+                                <p className="text-white font-semibold text-sm leading-tight">
+                                    {skill.name}
+                                </p>
+                                <p className="text-blue-400 text-xs mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    {skill.tag}
+                                </p>
                             </div>
                         </div>
                     ))}
