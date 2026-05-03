@@ -36,7 +36,7 @@ const News = () => {
             category: "Python",
             title: "Python Projects",
             excerpt: "Worked on multiple Python projects including Face Recognition using OpenCV, Emotion Detection from Text using NLP techniques, and a Hostel Management System to manage student records, rooms, and hostel administration.",
-            readTime: "7 min read",
+            readTime: "5 min read",
         },
     ];
 
