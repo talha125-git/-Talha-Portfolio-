@@ -44,7 +44,7 @@ const About = () => {
                 "Currently learning backend development with Node.js and MongoDB. Building small projects to understand server-side programming, APIs, and database integration.",
         },
         {
-            year: "2023 - 2027",
+            year: "2023 - Continoue",
             title: "BS Software Engineering",
             company: "CECOS University Peshawar",
             description:
