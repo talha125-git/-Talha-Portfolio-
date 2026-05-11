@@ -30,10 +30,11 @@ const Home = () => {
                     <div className="lg:w-32 w-full h-1 mt-1 bg-blue-500  rounded-full"></div>
                     </div>
                     
-                    <p className="text-lg italic mt-6 px-3 lg:px-0 text-center lg:text-start text-slate-300 max-w-lg">
-                        Creative web developer dedicated to building and optimizing
-                        the performance of user-centric, high-impact websites having a
-                        graduation degree in computer science.
+                    <p className="mt-5 text-base leading-7 text-slate-300 max-w-2xl text-center lg:text-left">
+                        Creative and detail-oriented Web Developer with a Bachelor’s degree in Computer Science,
+                        dedicated to designing and optimizing user-focused, high-performance websites. Skilled in 
+                        building responsive and visually engaging web applications with modern technologies, while
+                        ensuring scalability, functionality, and seamless user experience.
                     </p>
                     <div className="space-x-3 mt-5 flex justify-center lg:justify-start">
                         <a href="https://www.linkedin.com/in/malik-abutalha-raheem-b89b09354" className="text-xl text-blue-500 hover:text-blue-400 hover:scale-125 transition-all duration-300">
