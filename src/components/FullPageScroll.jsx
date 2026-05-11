@@ -149,7 +149,7 @@ const FullPageScroll = ({ children }) => {
 
                 // Check if we've waited long enough AND had enough scroll events at the boundary
                 const timeSinceHit = now - boundaryHitTime.current;
-                if (timeSinceHit < BOUNDARY_COOLDOWN || boundaryScrollCount.current < BOUNDARY_SCROLL_THRESHOLD) {     
+                if (timeSinceHit < BOUNDARY_COOLDOWN || boundaryScrollCount.current < BOUNDARY_SCROLL_THRESHOLD) {
                     // Not ready yet — don't transition
                     return;
                 }
@@ -174,7 +174,7 @@ const FullPageScroll = ({ children }) => {
         };
 
         const container = containerRef.current;
-        if (container) { 
+        if (container) {
             container.addEventListener("wheel", handleWheel, { passive: false });
         }
 
@@ -301,7 +301,10 @@ const FullPageScroll = ({ children }) => {
             </nav> */}
 
             {/* Scroll indicator on first section */}
-            <div className={`scroll-indicator ${currentIndex === 0 ? "visible" : ""}`}>
+            <div
+                className={`scroll-indicator ${currentIndex === 0 ? "visible" : ""
+                    } hidden md:flex`}
+            >
                 <div className="scroll-mouse">
                     <div className="scroll-wheel"></div>
                 </div>
