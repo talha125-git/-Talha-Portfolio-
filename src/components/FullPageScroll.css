@@ -213,7 +213,7 @@ body.light-mode .fullpage-dot.active {
 }
 
 /* show only md and above */
-@media (min-width: 268px) {
+@media (min-width: 768px) {
     .scroll-indicator {
         display: flex;
     }
