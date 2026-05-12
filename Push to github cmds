@@ -1,3 +1,3 @@
 git add .
-git commit -m "Changes scrool on mouse "
+git commit -m "Changes in about section 1 "
 git push -u origin main   

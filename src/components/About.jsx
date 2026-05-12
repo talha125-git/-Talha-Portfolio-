@@ -86,7 +86,7 @@ const About = () => {
                             </tr>
                             <tr>
                                 <td className="text-white font-medium pr-4 py-1">Languages:</td>
-                                <td>English, Urdu, Pushtu</td>
+                                <td>English, Urdu, Pashtu</td>
                             </tr>
                         </tbody>
                     </table>
