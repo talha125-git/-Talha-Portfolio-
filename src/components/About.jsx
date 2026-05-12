@@ -17,7 +17,7 @@ const About = () => {
             color: "text-blue-600",
             wide: true,
         },
-        { name: "Database",           icon: <FaDatabase />,  tag: "SQL & Data Storage", color: "text-violet-400" },
+        { name: "Database", icon: <FaDatabase />, tag: "SQL & Data Storage", color: "text-violet-400" },
 
     ];
 
@@ -94,10 +94,7 @@ const About = () => {
                 <div>
                     <h2 className="text-2xl font-semibold mb-4 text-slate-100">What I Do</h2>
                     <p className="text-slate-300 leading-relaxed">
-                        I am a creative web developer with a passion for building beautiful,
-                        functional websites. I specialize in front-end development using React.js
-                        and modern CSS frameworks. I love turning complex problems into simple,
-                        elegant solutions that provide real value to users.
+                        I’m a MERN Stack Developer passionate about building modern web applications using MongoDB, Express.js, React.js, and Node.js. I enjoy creating responsive and user-friendly websites.
                     </p>
                     <p className="text-slate-300 leading-relaxed mt-4">
                         With a solid foundation in computer science and hands-on experience
