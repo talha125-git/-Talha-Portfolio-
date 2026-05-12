@@ -97,9 +97,7 @@ const About = () => {
                         I’m a MERN Stack Developer passionate about building modern web applications using MongoDB, Express.js, React.js, and Node.js. I enjoy creating responsive and user-friendly websites.
                     </p>
                     <p className="text-slate-300 leading-relaxed mt-4">
-                        With a solid foundation in computer science and hands-on experience
-                        in web development, I bring both technical expertise and creative
-                        thinking to every project I work on.
+                        I’m continuously learning new technologies and improving my skills through real-world projects. I love solving problems and turning ideas into functional applications.
                     </p>
                 </div>
             </div>
